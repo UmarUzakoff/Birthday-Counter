@@ -4,7 +4,7 @@ const giftbox = document.getElementById('merrywrap');
 const canvasC = document.getElementById('c');
 
 const config = {
-  birthdate: 'Oct 2, 2023',
+  birthdate: 'Oct 9, 2023',
   name: 'Kumush'
 };
 
@@ -26,7 +26,7 @@ const second = 1000,
   hour = minute * 60,
   day = hour * 24;
 
-let countDown = new Date(`${config.birthdate} 20:30:00`).getTime();
+let countDown = new Date(`${config.birthdate} 00:00:00`).getTime();
 x = setInterval(function() {
   let now = new Date().getTime(),
     distance = countDown - now;
@@ -452,7 +452,7 @@ x = setInterval(function() {
     head.style.display = 'initial';
     count.style.display = 'initial';
   } else {
-    window.location.replace("http://127.0.0.1:5500/index.html")
+    window.location.replace("https://happy-birthday-kumush.netlify.app")
     head.style.display = 'none';
     count.style.display = 'none';
     giftbox.style.display = 'initial';
